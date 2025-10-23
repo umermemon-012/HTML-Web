@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px; /* reserve space for the fixed nav */
+  background-color: rgb(222, 178, 113);
+}
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+}
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+p {
+  color: #555;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(222, 178, 113, 0.9);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: rgb(222, 178, 113);
+}
+.nav-links{
+  display: inline-block;
+  padding: 10px 16px;
+  color: rgb(199, 108, 28);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.08s ease;
+}
+
+.nav-links:hover,
+.nav-links:focus{
+  background-color: rgb(199, 108, 28);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.abt{
+  margin-top: 50px;
+  align-items: center;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+h3{
+  color: #333;
+  text-align: center;
+}
+a{
+  color: rgb(199, 108, 28);
+  text-decoration: none;
+  font-size: 16px;
+}
+a:hover{
+  text-decoration: underline;
+}
+ul li{
+  font-size: 18px;
+  list-style: none;
+  display: block;
+  position: relative;
+
+}
+
+/* Skills list as centered badge-like items */
+.skills-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0 30px 0;
+}
+.skills-list li{
+  list-style: none;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 480px){
+  .skills-list li{
+    padding: 6px 10px;
+    font-size: 15px;
+  }
+}
+
+/* Resume tables: modern, readable styling */
+table{
+  width: 90%;
+  max-width: 900px;
+  margin: 12px auto 30px auto;
+  border-collapse: collapse;
+  background: rgba(215, 117, 32, 0.04);
+  border-radius: 8px;
+  overflow: hidden; /* keeps rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+th, td{
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+th{
+  background: linear-gradient(180deg, rgba(199,108,28,0.12), rgba(199,108,28,0.06));
+  color: rgb(60,40,30);
+  font-weight: 700;
+}
+tr:nth-child(even) td{
+  background: rgba(0,0,0,0.02);
+}
+
+/* Make tables responsive on small screens by stacking cells */
+@media (max-width: 640px){
+  table, thead, tbody, th, td, tr{
+    display: block;
+  }
+  thead{ display: none; }
+  tr{ margin-bottom: 12px; }
+  td{
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    background: transparent;
+  }
+  td:before{
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: 700;
+    color: rgba(0,0,0,0.7);
+  }
+  /* Labels for each td in order — matches table structure: Degree/Position, Institution/Company, Year/Duration */
+  tr td:nth-of-type(1):before{ content: "Title"; }
+  tr td:nth-of-type(2):before{ content: "Place"; }
+  tr td:nth-of-type(3):before{ content: "When"; }
+}
+.ct{
+  font-size: 18px;
+  margin: 8px 0;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+margin: 10px 20px 20px 20px;
+}
