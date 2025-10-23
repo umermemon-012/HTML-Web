@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MERN Stack Developer - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+     <nav>
+        <ul>
+            <li><a href="#about" class="nav-links">About Me</a></li>
+            <li><a href="#resume" class="nav-links">Resume</a></li>
+            <li><a href="#projects" class="nav-links">Projects</a></li>
+            <li><a href="#contact" class="nav-links">Contact Me</a></li>
+        </ul>
+    </nav>
+
 
     <h1>Welcome to My Portfolio</h1>
     <img src="https://avatars.githubusercontent.com/u/178928829?v=4" alt="Profile Picture" width="150">
 
     <p>Hello! I'm <strong>Umer</strong>, a passionate MERN Stack Developer.</p>
 
-    <h2>Navigation</h2>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <hr>
-
     <!-- About Section -->
-    <h2 id="about">About Me</h2>
+    <h2 class="abt" id="about">About Me</h2>
     <p>I specialize in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.</p>
 
     <h3>Skills</h3>
-    <ul>
+    <ul class="skills-list">
         <li>MongoDB</li>
         <li>Express.js</li>
         <li>React.js</li>
@@ -36,10 +37,9 @@
         <li>Git & GitHub</li>
     </ul>
 
-    <hr>
 
     <!-- Resume Section -->
-    <h2 id="resume">Resume</h2>
+    <h2 class="abt" id="resume">Resume</h2>
 
     <h3>Education</h3>
     <table border="1">
@@ -69,31 +69,14 @@
         </tr>
     </table>
 
-    <hr>
-
-    <!-- Projects Section -->
-    <h2 id="projects">Projects</h2>
-
-    <h3>1. Task Manager App</h3>
-    <p>A MERN stack app to manage daily tasks with authentication and CRUD operations.</p>
-    <a href="https://github.com/umermemon1/task-manager">View on GitHub</a>
-
-    <h3>2. E-Commerce Platform</h3>
-    <p>Built a full-featured shopping site using React, Node, Express, and MongoDB.</p>
-    <a href="https://github.com/umermemon1/ecommerce-site">View on GitHub</a>
-
-    <h3>3. Portfolio Website</h3>
-    <p>This HTML-only portfolio you’re viewing right now!</p>
-
-    <hr>
 
     <!-- Contact Section -->
-    <h2 id="contact">Contact Me</h2>
+    <h2  class="abt" id="contact">Contact Me</h2>
     <ul>
-        <li>Email: umery101@gmail.com</li>
-        <li>Phone: +923 161395 147</li>
-        <li>GitHub: <a href="https://github.com/umermemon1">github.com/umermemon1</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/umer-the-dev">linkedin.com/in/umermemon1</a></li>
+        <li class="ct">Email: umery101@gmail.com</li>
+        <li class="ct">Phone: +923 161395 147</li>
+        <li class="ct">GitHub: <a href="https://github.com/umermemon1">github.com/umermemon1</a></li>
+        <li class="ct">LinkedIn: <a href="https://linkedin.com/in/umer-the-dev">linkedin.com/in/umermemon1</a></li>
     </ul>
 
     <p><a href="#top">Back to Top</a></p>
